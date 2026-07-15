@@ -1,0 +1,29 @@
+class Person {
+    void display() {
+        System.out.println("Person");
+    }
+}
+
+class Student extends Person {
+    void display() {
+        System.out.println("Student");
+    }
+}
+
+class Teacher extends Person {
+    void display() {
+        System.out.println("Teacher");
+    }
+}
+
+public class Main2 {
+    public static void main(String[] args) {
+        Person p;
+
+        p = new Student();
+        p.display();
+
+        p = new Teacher();
+        p.display();
+    }
+}
